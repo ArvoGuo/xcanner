@@ -1,5 +1,10 @@
 # XCanner
 
+# Install
+```sh
+npm install xcanner --global
+```
+
 # Usage
 ## Xcanner scan-port
 ### Example
