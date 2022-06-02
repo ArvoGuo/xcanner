@@ -1,3 +1,7 @@
+
+[![NPM Version](http://img.shields.io/npm/v/xcanner.svg?style=flat)](https://www.npmjs.org/package/xcanner)
+[![NPM Downloads](https://img.shields.io/npm/dm/xcanner.svg?style=flat)](https://npmcharts.com/compare/xcanner?minimal=true)
+[![Install Size](https://packagephobia.now.sh/badge?p=xcanner)](https://packagephobia.now.sh/result?p=xcanner)
 # XCanner
 
 # Install
