@@ -3,14 +3,18 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/xcanner.svg?style=flat)](https://npmcharts.com/compare/xcanner?minimal=true)
 [![Install Size](https://packagephobia.now.sh/badge?p=xcanner)](https://packagephobia.now.sh/result?p=xcanner)
 # XCanner
+- Scan server port
+- Blast MD5 string 
+
 
 # Install
 ```sh
 npm install xcanner --global
 ```
 
-# Usage
-## Xcanner scan-port
+# Command `xcanner scan-port`
+## Usage
+`xcanner scan-port [IP] [-options]`
 ### Example
 ```sh
 $ xcanner scan-port 127.0.0.1 
@@ -51,5 +55,17 @@ $ xcanner scan-port 127.0.0.1 -f 2000 -t 8000
   { host: '127.0.0.1', port: 7000, status: 'active' },
   { host: '127.0.0.1', port: 7335, status: 'active' }
 ]
+
+```
+
+# Command `xcanner md5-blast`
+## Usage
+`xcanner md5-blast [string] [-options]`
+### Example
+```sh
+$ xcanner md5-blast 8a45ad -f 0 -t 99999999
+// result 
+
+7018045
 
 ```
