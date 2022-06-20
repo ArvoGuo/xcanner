@@ -3,8 +3,8 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/xcanner.svg?style=flat)](https://npmcharts.com/compare/xcanner?minimal=true)
 [![Install Size](https://packagephobia.now.sh/badge?p=xcanner)](https://packagephobia.now.sh/result?p=xcanner)
 # XCanner
-- Scan server port
-- Blast MD5 string 
+- `xcanner scan-port`, Scan ports, a port scanning tool developed in Nodejs language, supports high concurrent scanning
+- `xcanner md5-blast`, md5 cracking, md5 cracking tool written in Nodejs language
 
 
 # Install
