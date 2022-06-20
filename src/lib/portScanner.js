@@ -78,7 +78,7 @@ module.exports = async (options) => {
     throw new Error("from is Empty");
   }
 
-  if (isNaN(speed)) {
+  if (speed && isNaN(speed)) {
     throw new Error("speed shoud be number");
   }
 
