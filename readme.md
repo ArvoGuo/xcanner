@@ -15,6 +15,9 @@ npm install xcanner --global
 # Command `xcanner scan-port`
 ## Usage
 `xcanner scan-port [IP] [-options]`
+
+![image info](./imgs/capture_scan_port.gif)
+
 ### Example
 ```sh
 $ xcanner scan-port 127.0.0.1 
@@ -55,6 +58,19 @@ $ xcanner scan-port 127.0.0.1 -f 2000 -t 8000
   { host: '127.0.0.1', port: 7000, status: 'active' },
   { host: '127.0.0.1', port: 7335, status: 'active' }
 ]
+```
+
+`-s, --speed`, Number of concurrent scans
+
+```sh
+$ xcanner scan-port 127.0.0.1 -s 100
+
+```
+
+`-fl, --filter`
+
+```sh
+$ xcanner scan-port 127.0.0.1 -fl 'active|timeout|error'
 
 ```
 
