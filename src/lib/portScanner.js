@@ -57,7 +57,7 @@ const scanPorts = async (host, ports, options) => {
     }
     result = result.concat(queueFilterResult);
     queue = [];
-    logProgress(ports.length - portsTmp.length, ports.length, max_batch);
+    logProgress(ports.length - portsTmp.length, ports.length);
   }
   return result;
 };

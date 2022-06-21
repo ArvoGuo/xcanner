@@ -4,7 +4,7 @@ function percentFormat(num) {
 
 function logProgress(index, total, step) {
   if (!step) {
-    console.log(percentFormat(index / total));
+    console.log('Progress: ' + percentFormat(index / total));
     return;
   }
   if (index % step === 0) {
