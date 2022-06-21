@@ -46,7 +46,9 @@ const scanPorts = async (host, ports, options) => {
     if (queue.length <= max_batch) {
       let newPort = portsTmp.shift();
       queue.push(scanOnePort(host, newPort));
-      continue;
+      if (portsTmp.length > 0) {
+        continue;
+      }
     }
     let queueResult = await Promise.all(queue);
     let queueFilterResult = resultFilter(queueResult, options);
@@ -96,7 +98,7 @@ module.exports = async (options) => {
   }
 
   if (port) {
-    return await scanPorts(host, [port], options);
+    return await scanPorts(host, [port], {...options, filter: 'active|timeout|error'});
   }
   return await await scanPorts(host, allPorts, options);
 };

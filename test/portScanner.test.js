@@ -26,6 +26,7 @@ describe('scan-port', () => {
                 host: '127.0.0.1',
                 port: 3000
             })
+            console.log(result)
             expect(result[0].status).toEqual('active')
             server.close()
         })
